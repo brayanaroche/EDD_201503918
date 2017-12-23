@@ -1,0 +1,9 @@
+c:\users\aroche\documents\visual studio 2015\Projects\ArbolBinarioBusqueda\ArbolBinarioBusqueda\bin\Debug\ArbolBinarioBusqueda.exe.config
+c:\users\aroche\documents\visual studio 2015\Projects\ArbolBinarioBusqueda\ArbolBinarioBusqueda\bin\Debug\ArbolBinarioBusqueda.exe
+c:\users\aroche\documents\visual studio 2015\Projects\ArbolBinarioBusqueda\ArbolBinarioBusqueda\bin\Debug\ArbolBinarioBusqueda.pdb
+c:\users\aroche\documents\visual studio 2015\Projects\ArbolBinarioBusqueda\ArbolBinarioBusqueda\obj\Debug\ArbolBinarioBusqueda.csprojResolveAssemblyReference.cache
+c:\users\aroche\documents\visual studio 2015\Projects\ArbolBinarioBusqueda\ArbolBinarioBusqueda\obj\Debug\ArbolBinarioBusqueda.Form1.resources
+c:\users\aroche\documents\visual studio 2015\Projects\ArbolBinarioBusqueda\ArbolBinarioBusqueda\obj\Debug\ArbolBinarioBusqueda.Properties.Resources.resources
+c:\users\aroche\documents\visual studio 2015\Projects\ArbolBinarioBusqueda\ArbolBinarioBusqueda\obj\Debug\ArbolBinarioBusqueda.csproj.GenerateResource.Cache
+c:\users\aroche\documents\visual studio 2015\Projects\ArbolBinarioBusqueda\ArbolBinarioBusqueda\obj\Debug\ArbolBinarioBusqueda.exe
+c:\users\aroche\documents\visual studio 2015\Projects\ArbolBinarioBusqueda\ArbolBinarioBusqueda\obj\Debug\ArbolBinarioBusqueda.pdb
