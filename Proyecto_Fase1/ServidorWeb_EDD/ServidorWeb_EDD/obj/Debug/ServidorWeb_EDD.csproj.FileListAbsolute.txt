@@ -1,0 +1,6 @@
+c:\users\aroche\documents\visual studio 2015\Projects\ServidorWeb_EDD\ServidorWeb_EDD\bin\ServidorWeb_EDD.dll.config
+c:\users\aroche\documents\visual studio 2015\Projects\ServidorWeb_EDD\ServidorWeb_EDD\bin\ServidorWeb_EDD.dll
+c:\users\aroche\documents\visual studio 2015\Projects\ServidorWeb_EDD\ServidorWeb_EDD\bin\ServidorWeb_EDD.pdb
+c:\users\aroche\documents\visual studio 2015\Projects\ServidorWeb_EDD\ServidorWeb_EDD\obj\Debug\ServidorWeb_EDD.csprojResolveAssemblyReference.cache
+c:\users\aroche\documents\visual studio 2015\Projects\ServidorWeb_EDD\ServidorWeb_EDD\obj\Debug\ServidorWeb_EDD.dll
+c:\users\aroche\documents\visual studio 2015\Projects\ServidorWeb_EDD\ServidorWeb_EDD\obj\Debug\ServidorWeb_EDD.pdb
