@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="Cliente_EDD.Admin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminUsuariosABB.aspx.cs" Inherits="Cliente_EDD.AdminUsuariosABB" %>
 
 <!DOCTYPE html>
 
@@ -13,7 +13,7 @@
     <script src="js/modernizr.custom.25376.js"></script>
 </head>
 <body>
-    <div id="perspective" class="perspective effect-rotatetop">
+    <div id="perspective" class="perspective effect-airbnb">
 			<div class="container">
 				<div class="wrapper">
 					<!-- Top Navigation -->
@@ -21,20 +21,48 @@
                         <a class="codrops-icon codrops-icon-prev" id="showMenu" style="cursor: pointer"><span>Menu</span></a>                                            
 					</div>
 					<header class="codrops-header">
-						<h1>Bienvenido<span>Administrador </span></h1>	
+						<h1>Operaciones<span>Basicas Usuario </span></h1>	
 					</header>
 					<div class="main clearfix">
+                        <form id="form1" class="main clearfix" runat="server">
 						<div class="column">
-							<p><label id="showMenu">Parte administrativa para Naval Wars.</label></p>
-                            <p><label id="showMenu">Menu de Navegacion parte superior.</label></p>
-						</div>
-						<div class="column">
-                            <form id="form1" runat="server">
+							<p><label id="showMenu">Modificar.</label></p>
+                            
                             <div>
                                 
+                                <label id="showMenu">
+                                <asp:TextBox ID="txtNickname" runat="server"></asp:TextBox>
+                                <br />
+                                <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+                                <br />
+                                <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                                <br />
+                                <asp:TextBox ID="txtConectado" runat="server"></asp:TextBox>
+                                <br />
+                                <asp:Button ID="Button3" runat="server" Text="Modificar" />
+                                </label>
+                                
+                                <br />
+                                
                             </div>
-                            </form> 
+                            
 						</div>
+						<div class="column">
+                            <p><label id="showMenu">Eliminar.</label></p>
+                            
+                            <div>
+                                
+                                <label id="showMenu">
+                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                <br />
+                                <asp:Button ID="Button1" runat="server" Text="Eliminar" />
+                                </label>
+                                
+                                <br />
+                                
+                            </div>                            
+						</div>
+                        </form>
 						<div class="related">
 							<p>Naval Wars</p>							
 						</div>

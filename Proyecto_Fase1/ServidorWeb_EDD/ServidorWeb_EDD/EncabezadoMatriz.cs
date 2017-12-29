@@ -9,14 +9,12 @@ namespace ServidorWeb_EDD
     {
         public NodoEncabezadoMatriz ini;
         public NodoEncabezadoMatriz fin;
-        int tam;
         
         //constructor
         public EncabezadoMatriz()
         {
             ini = null;
             fin = null;
-            tam = 0;
         }
 
         public NodoEncabezadoMatriz insertarEncabezado(int indice)

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="Cliente_EDD.Admin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CargaArchivoJuegoActual.aspx.cs" Inherits="Cliente_EDD.CargaArchivoJuegoActual" %>
 
 <!DOCTYPE html>
 
@@ -13,7 +13,7 @@
     <script src="js/modernizr.custom.25376.js"></script>
 </head>
 <body>
-    <div id="perspective" class="perspective effect-rotatetop">
+   <div id="perspective" class="perspective effect-laydown">
 			<div class="container">
 				<div class="wrapper">
 					<!-- Top Navigation -->
@@ -21,19 +21,24 @@
                         <a class="codrops-icon codrops-icon-prev" id="showMenu" style="cursor: pointer"><span>Menu</span></a>                                            
 					</div>
 					<header class="codrops-header">
-						<h1>Bienvenido<span>Administrador </span></h1>	
+						<h1>Carga<span>Archivos </span></h1>	
 					</header>
 					<div class="main clearfix">
 						<div class="column">
-							<p><label id="showMenu">Parte administrativa para Naval Wars.</label></p>
-                            <p><label id="showMenu">Menu de Navegacion parte superior.</label></p>
+							<p><label id="showMenu">Juego Actual.</label></p>
 						</div>
 						<div class="column">
+                            
                             <form id="form1" runat="server">
                             <div>
                                 
+                                <asp:FileUpload ID="FileUpload1" runat="server" />
+                                
+                                <br />
+                                <asp:Button ID="Button1" runat="server" Text="Cargar Archivo" />
+                                
                             </div>
-                            </form> 
+                            </form>
 						</div>
 						<div class="related">
 							<p>Naval Wars</p>							

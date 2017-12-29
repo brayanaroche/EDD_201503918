@@ -138,7 +138,7 @@ namespace ServidorWeb_EDD
             
             if (actualRaiz != null)
             {
-                graph += "\nnodo" + actualRaiz.nickName.ToString() + "[label=\" <f0> |<f1> " + actualRaiz.nickName.ToString() + " Email: " + actualRaiz.email + " |<f2>\"]; \n";
+                graph += "\nnodo" + actualRaiz.nickName.ToString() + "[label=\" <f0> |<f1> " + actualRaiz.nickName.ToString() + " \nEmail: " + actualRaiz.email + " \nConectado: " + actualRaiz.conectado.ToString() + " |<f2>\"]; \n";
                 if (actualRaiz.hijoIzq != null)
                 {
                     InOrden(actualRaiz.hijoIzq);
@@ -310,7 +310,7 @@ namespace ServidorWeb_EDD
             {
 
                 temporal = actualRaiz.hijoIzq;
-                graph1 += "\nnodo" + actualRaiz.nickName + "[label=\" <f0> |<f1> " + actualRaiz.nickName + " Email: " + actualRaiz.email + " |<f2>\"]; \n";
+                graph1 += "\nnodo" + actualRaiz.nickName + "[label=\" <f0> |<f1> " + actualRaiz.nickName + " \nEmail: " + actualRaiz.email + " \nConectado: " + actualRaiz.conectado.ToString() + " |<f2>\"]; \n";
                 if ((actualRaiz.hijoIzq != null && actualRaiz.hijoDer != null))
                 {
                     actualRaiz.hijoIzq = arbolEspejo(actualRaiz.hijoDer);

@@ -1,0 +1,6 @@
+C:\Users\Aroche\documents\visual studio 2015\Projects\Cliente_EDD\Cliente_EDD\bin\Cliente_EDD.dll.config
+C:\Users\Aroche\documents\visual studio 2015\Projects\Cliente_EDD\Cliente_EDD\bin\Cliente_EDD.dll
+C:\Users\Aroche\documents\visual studio 2015\Projects\Cliente_EDD\Cliente_EDD\bin\Cliente_EDD.pdb
+C:\Users\Aroche\documents\visual studio 2015\Projects\Cliente_EDD\Cliente_EDD\obj\Debug\Cliente_EDD.csprojResolveAssemblyReference.cache
+C:\Users\Aroche\documents\visual studio 2015\Projects\Cliente_EDD\Cliente_EDD\obj\Debug\Cliente_EDD.dll
+C:\Users\Aroche\documents\visual studio 2015\Projects\Cliente_EDD\Cliente_EDD\obj\Debug\Cliente_EDD.pdb

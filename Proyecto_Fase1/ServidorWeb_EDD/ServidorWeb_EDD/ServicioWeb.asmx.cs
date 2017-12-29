@@ -17,6 +17,8 @@ namespace ServidorWeb_EDD
     public class ServicioWeb : System.Web.Services.WebService
     {
         static ArbolBB nuevoArbol = new ArbolBB();
+        static MatrizDisperza nuevaMatriz = new MatrizDisperza();
+        ConvertirImagen nuevaImagen = new ConvertirImagen();
 
         [WebMethod]
         public string HelloWorld()
@@ -36,35 +38,55 @@ namespace ServidorWeb_EDD
             listaJuego.GraficarListaDoble("ListaDoble.txt", "C:/Estructuras");
             return listaJuego.mostrarValores();
         }
+        /*
+         * Metodos para Graficar Arbol y Matriz
+         */
+        [WebMethod]
+        public void GraficarArbolBB()
+        {
+            nuevoArbol.generarGraficaABB();
+            nuevoArbol.GraficarArbolBB("ArbolBB.txt", "C:/Estructuras");
+            nuevoArbol.graficarArbolEspejo();
+            nuevoArbol.GraficarArbolBB("ArbolEspejo.txt", "C:/Estructuras");
+        }
+
+        [WebMethod]
+        public string GraficaMatriz(int nivel)
+        {
+            nuevaMatriz.graficarMatriz(nivel);
+            nuevaMatriz.GraficarMatriz("matrizNivel" + nivel.ToString() + ".txt", "C:/Estructuras");
+            return "Grafica Generada";
+        }
+
+        /*
+         * Datos del Arbol
+         */
+
+        [WebMethod]
+        public String cantidadHojas()
+        {            
+            return "Cantidad Hojas: " + nuevoArbol.cantidadHojas().ToString() + ", Nivel: " + nuevoArbol.nivelMaximo().ToString() + ", Altura: " + nuevoArbol.alturaArbolBB().ToString() + ", Ramas: " + nuevoArbol.cantidadRamas().ToString();
+        }
+
+        /*
+         * Insertar Matriz y Arbol
+         */
+        [WebMethod]
+        public void insertarMatriz(string unidad, int vida, int x, int y, int nivel , int alcance, int hurt)
+        {
+            //MatrizDisperza nuevaMatriz = new MatrizDisperza();
+            nuevaMatriz.insertarMatriz(unidad, vida, x, y, nivel, alcance, hurt);
+        }
 
         [WebMethod]
         public void AgregarArbol(string usuario, string password, string email, bool conetado)
         {
-            
             nuevoArbol.insertarABB(usuario, password, email, conetado);
-            nuevoArbol.generarGraficaABB();
-            
-            nuevoArbol.GraficarArbolBB("ArbolBB.txt","C:/Estructuras");
-            
         }
 
-        [WebMethod]
-        public String cantidadHojas()
-        {
-            nuevoArbol.graficarArbolEspejo();
-            nuevoArbol.GraficarArbolBB("ArbolEspejo.txt", "C:/Estructuras");
-            return "Cantidad Hojas: " + nuevoArbol.cantidadHojas().ToString() + ", Nivel: " + nuevoArbol.nivelMaximo().ToString() + ", Altura: " + nuevoArbol.alturaArbolBB().ToString() + ", Ramas: " + nuevoArbol.cantidadRamas().ToString();
-        }
-
-        [WebMethod]
-        public void insertarMatriz()
-        {
-            MatrizDisperza nuevaMatriz = new MatrizDisperza();
-            nuevaMatriz.insertarMatriz("Submarino1", 10, 5, 2, 0, 4, 4);
-            nuevaMatriz.insertarMatriz("Barco1", 10, 8, 4, 1, 4, 4);
-            nuevaMatriz.insertarMatriz("Satelite1", 10, 3, 9, 3, 4, 4);
-        }
-
+        /*
+         * Login
+         */
         [WebMethod]
         public string buscarUsuario(string usuario, string password)
         {
@@ -78,9 +100,47 @@ namespace ServidorWeb_EDD
             }
             else
             {
-                return "No hay valores";
+                return "Login.aspx";
             }
-            //return "";
+        }
+
+        /*
+         * Imagenes para Arbol BB, Espejo y Matriz Dispeza por niveles
+         */
+        [WebMethod]
+        public byte[] imagenArbolBB()
+        {            
+            return nuevaImagen.convertirImagenBytes("C:/Estructuras/ArbolBB.jpg");
+        }
+
+        [WebMethod]
+        public byte[] imagenMatriz(string nivel)
+        {
+            return nuevaImagen.convertirImagenBytes("C:/Estructuras/matrizNivel" + nivel.ToString() + ".jpg");
+        }
+
+        [WebMethod]
+        public byte[] imagenArbolEspejo()
+        {
+            return nuevaImagen.convertirImagenBytes("C:/Estructuras/ArbolEspejo.jpg");
+        }
+
+        /*
+         * Eliminar Arbol y Matriz
+         */
+        
+        [WebMethod]
+        public string EliminarUsuario(string nickName)
+        {
+            nuevoArbol.eliminarABB(ref ArbolBB.raiz, nickName);
+            return "Usuario Eliminado";
+        }
+
+        [WebMethod]
+        public string EliminarMatriz(string unidad, int x, int y, int z)
+        {
+            nuevaMatriz.eliminarMatriz(unidad, x, y, z);
+            return "Unidad Eliminada";
         }
     }
 }

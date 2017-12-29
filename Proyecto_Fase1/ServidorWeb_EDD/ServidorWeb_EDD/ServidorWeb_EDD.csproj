@@ -64,9 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArbolBB.cs" />
+    <Compile Include="ConvertirImagen.cs" />
     <Compile Include="EncabezadoMatriz.cs" />
     <Compile Include="ListaDobleJuego.cs" />
-    <Compile Include="Login.cs" />
     <Compile Include="MatrizDisperza.cs" />
     <Compile Include="NodoArbolBB.cs" />
     <Compile Include="NodoEncabezadoMatriz.cs" />
